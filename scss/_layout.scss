@@ -1,0 +1,37 @@
+// .jumbotron {
+//   background: #3a6186;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+// }
+
+.container {
+  background: #3a6186;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.nav-list {
+  display: none;
+  text-align: center;
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  width: 70%;
+  background: #f4f4f4;
+  border: 1px black solid;
+}
+
+.nav-toggler {
+  @include med {
+    display: none;
+  }
+}

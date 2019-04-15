@@ -1,4 +1,57 @@
-.jumbotron {
-  background-image: url("");
+.container {
+  background: #3a6186;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#89253e), to(#3a6186));
+  background: linear-gradient(to right, #89253e, #3a6186);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.nav-list {
+  display: none;
+  text-align: center;
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  width: 70%;
+  background: #f4f4f4;
+  border: 1px black solid;
+}
+
+@media (min-width: 768px) {
+  .nav-toggler {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-header {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
 }
 /*# sourceMappingURL=main.css.map */
