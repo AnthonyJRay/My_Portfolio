@@ -1,5 +1,6 @@
 const navButton = document.querySelector('.nav-toggler');
 const navList = document.querySelector('.nav-list');
+const calender = document.querySelector('.calender');
 
 navButton.addEventListener('click', () => {
   if(navList.style.display === 'none'){
@@ -8,4 +9,8 @@ navButton.addEventListener('click', () => {
   } else {
     navList.style.display = 'none'
   }
+});
+
+new GitHubCalendar(calender, "AnthonyJRay", {
+  responsive: true
 });

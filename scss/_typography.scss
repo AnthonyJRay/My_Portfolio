@@ -3,11 +3,21 @@
 }
 
 .main-header {
-  font-weight: 500;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: .075em
 }
 
 h1,
 h2 {
   font-family: 'Playfair Display', serif;
+}
+
+.header-text {
+  font-style: italic;
+}
+
+.introParagraph {
+  font-family: 'Source Sans Pro, sans-serif';
+  letter-spacing: .04em;
 }
