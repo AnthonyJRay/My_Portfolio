@@ -13,11 +13,12 @@ h2 {
   font-family: 'Playfair Display', serif;
 }
 
-.header-text {
+.header-text,
+.header-wrap > a {
   font-style: italic;
 }
 
-.introParagraph {
+.introParagraph{
   font-family: 'Source Sans Pro, sans-serif';
   letter-spacing: .04em;
 }

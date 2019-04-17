@@ -1,5 +1,5 @@
 .container-fluid {
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.699), rgba(2, 2, 2, 0.342)), url('../images/live-work-create.jpg');
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.377)), url('../images/live-work-create.jpg');
   background-size: cover;
   padding: 0;
 }
@@ -13,8 +13,9 @@
 .jumbotron {
   max-width: 90%;
   margin: 20px auto;
-  color: #A89795;
-  background-color: rgba(255, 255, 255, 0.322);
+  color: #f4f4f4;
+  background-color: rgba(255, 255, 255, 0.219);
+  border: 5px rgba(236, 203, 91, 0.705) double;
 }
 
 
@@ -23,7 +24,7 @@
   display: flex;
   justify-content: flex-end;
   position: relative;
-  background-color: rgba(35, 115, 126, 0.205);
+  background-color: rgba(31, 68, 102, 0.87);
 }
 
 .nav-list {
@@ -46,8 +47,8 @@
 
 .btn:hover,
 .btn:focus           {
-  border-bottom: 2px solid rgb(255, 255, 255);
-  color: rgb(223, 197, 111);
+  border-bottom: 2px solid rgba(236, 203, 91, 0.705);
+  color: #dee2e6;
   border-radius: none;
   background-color: #3a61868a;
 }
@@ -57,11 +58,14 @@
   font-weight: 900;
   content: '\f101';
   margin-right: 10px;
-  color: cream;
+  color: rgba(236, 203, 91, 0.705);
 }
 
 .introParagraph {
   margin-top: 40px;
+  @include med {
+    margin: 0;
+  }
 }
 
 .menu {
@@ -71,8 +75,52 @@
 
 .nav-links > button {
   color: #5095b8;
-  font-size: 1.15em;
+  font-size: 1.05em;
   margin-right: 1.5em;
   font-weight: 500;
   background-image: linear-gradient(rgba(35, 115, 126, 0), rgba(35, 115, 126, 0.205));
+}
+
+.myGithub {
+  background-color: rgba(255, 255, 255, 0.219);
+  border: 5px rgba(236, 203, 91, 0.705) double !important;
+  max-width: 90%;
+  margin: auto;
+}
+
+.py-2 {
+  color: #dee2e6;
+  border-radius: 5px;
+}
+
+.contrib-column {
+  border: none;
+}
+
+.text-muted {
+  color:  #5095b8!important;
+}
+
+.contrib-number {
+  color: rgba(236, 203, 91, 0.705);
+}
+
+h2 {
+  color: #f4f4f4;
+}
+
+.fab:hover,
+.fab:focus {
+  transform: scale(1.1) rotate(10deg);
+  transition: ease-in-out 200ms;
+  color: #dee2e6;
+}
+
+.header-wrap > a {
+  color:  #5095b8;
+  font-size: .9em
+}
+
+.header-text {
+  margin-bottom: 0;
 }
