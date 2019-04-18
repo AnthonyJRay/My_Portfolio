@@ -1,10 +1,3 @@
-.container-fluid {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.699)), to(rgba(0, 0, 0, 0.377))), url("../images/live-work-create.jpg");
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.377)), url("../images/live-work-create.jpg");
-  background-size: cover;
-  padding: 0;
-}
-
 .icon-wrap > a {
   color: #5095b8;
   font-size: 1.13em;
@@ -15,8 +8,7 @@
   max-width: 90%;
   margin: 20px auto;
   color: #f4f4f4;
-  background-color: rgba(255, 255, 255, 0.219);
-  border: 5px rgba(236, 203, 91, 0.705) double;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .navbar {
@@ -56,22 +48,10 @@
   background-color: #3a61868a;
 }
 
-.header-text:before {
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900;
-  content: '\f101';
-  margin-right: 10px;
-  color: rgba(236, 203, 91, 0.705);
-}
-
 .introParagraph {
-  margin-top: 40px;
-}
-
-@media (min-width: 768px) {
-  .introParagraph {
-    margin: 0;
-  }
+  margin: 20px 40px;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
 }
 
 .menu {
@@ -89,8 +69,7 @@
 }
 
 .myGithub {
-  background-color: rgba(255, 255, 255, 0.219);
-  border: 5px rgba(236, 203, 91, 0.705) double !important;
+  background-color: rgba(255, 255, 255, 0);
   max-width: 90%;
   margin: auto;
 }
@@ -134,6 +113,156 @@ h2 {
   margin-bottom: 0;
 }
 
+.skills-icon {
+  border-bottom: 1px solid white;
+  height: 50px;
+  width: 50px;
+}
+
+.frontend > ul > li,
+.tooling > ul > li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.frontend > ul > li::before,
+.tooling > ul > li::before {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 700;
+  content: '\f00c';
+  margin-right: 10px;
+}
+
+h3:after {
+  content: "";
+  display: block;
+  margin: 5px auto;
+  width: 75%;
+  border-bottom: 1px solid red;
+}
+
+h3.study-heading:after {
+  width: 50%;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.test {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 150px auto;
+  height: 100vh;
+  width: 70%;
+  position: relative;
+  justify-items: center;
+}
+
+.one {
+  background-color: #f4f4f4;
+  height: 80%;
+  width: 60%;
+  position: absolute;
+}
+
+@-webkit-keyframes spinFromRight {
+  0% {
+    -webkit-transform: rotate(90deg) translateY(-1000px);
+            transform: rotate(90deg) translateY(-1000px);
+  }
+}
+
+@keyframes spinFromRight {
+  0% {
+    -webkit-transform: rotate(90deg) translateY(-1000px);
+            transform: rotate(90deg) translateY(-1000px);
+  }
+}
+
+@-webkit-keyframes spinFromLeft {
+  0% {
+    -webkit-transform: rotate(90deg) translate(-1000px, 1000px);
+            transform: rotate(90deg) translate(-1000px, 1000px);
+  }
+}
+
+@keyframes spinFromLeft {
+  0% {
+    -webkit-transform: rotate(90deg) translate(-1000px, 1000px);
+            transform: rotate(90deg) translate(-1000px, 1000px);
+  }
+}
+
+@-webkit-keyframes navBarFade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes navBarFade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes hideLocation {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideLocation {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+.textLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 10px 20px;
+  -webkit-animation: 2500ms ease-in hideLocation;
+          animation: 2500ms ease-in hideLocation;
+}
+
+.one {
+  -webkit-animation: 2000ms ease-in spinFromLeft;
+          animation: 2000ms ease-in spinFromLeft;
+}
+
+.two {
+  background-color: #c1c1c1;
+  height: 45%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  -webkit-animation: 2000ms ease-in spinFromRight;
+          animation: 2000ms ease-in spinFromRight;
+  -webkit-transform: skewX(10deg);
+          transform: skewX(10deg);
+}
+
+.navbar {
+  -webkit-animation: 2000ms ease-in navBarFade;
+          animation: 2000ms ease-in navBarFade;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -152,8 +281,15 @@ h2 {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Playfair Display', serif;
+}
+
+.modal-title {
+  font-weight: 900;
 }
 
 .header-text,

@@ -1,11 +1,11 @@
-.container-fluid {
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.377)), url('../images/live-work-create.jpg');
-  background-size: cover;
-  padding: 0;
-}
+// .container-fluid {
+//   background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.938));
+//   background-size: cover;
+//   padding: 0;
+// }
 
-.icon-wrap > a {
-  color:  #5095b8;
+.icon-wrap>a {
+  color: #5095b8;
   font-size: 1.13em;
   margin-left: .5em;
 }
@@ -14,8 +14,7 @@
   max-width: 90%;
   margin: 20px auto;
   color: #f4f4f4;
-  background-color: rgba(255, 255, 255, 0.219);
-  border: 5px rgba(236, 203, 91, 0.705) double;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -46,26 +45,16 @@
 }
 
 .btn:hover,
-.btn:focus           {
+.btn:focus {
   border-bottom: 2px solid rgba(236, 203, 91, 0.705);
   color: #dee2e6;
   border-radius: none;
   background-color: #3a61868a;
 }
 
-.header-text:before {
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900;
-  content: '\f101';
-  margin-right: 10px;
-  color: rgba(236, 203, 91, 0.705);
-}
-
 .introParagraph {
-  margin-top: 40px;
-  @include med {
-    margin: 0;
-  }
+  margin: 20px 40px;
+  transform: skew(-10deg);
 }
 
 .menu {
@@ -73,7 +62,7 @@
   font-size: 1.6em;
 }
 
-.nav-links > button {
+.nav-links>button {
   color: #5095b8;
   font-size: 1.05em;
   margin-right: 1.5em;
@@ -82,8 +71,7 @@
 }
 
 .myGithub {
-  background-color: rgba(255, 255, 255, 0.219);
-  border: 5px rgba(236, 203, 91, 0.705) double !important;
+  background-color: rgba(255, 255, 255, 0);
   max-width: 90%;
   margin: auto;
 }
@@ -98,7 +86,7 @@
 }
 
 .text-muted {
-  color:  #5095b8!important;
+  color: #5095b8 !important;
 }
 
 .contrib-number {
@@ -116,11 +104,138 @@ h2 {
   color: #dee2e6;
 }
 
-.header-wrap > a {
-  color:  #5095b8;
+.header-wrap>a {
+  color: #5095b8;
   font-size: .9em
 }
 
 .header-text {
   margin-bottom: 0;
 }
+
+.skills-icon {
+  border-bottom: 1px solid white;
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+// MODAL STYLING
+.frontend>ul>li,
+.tooling>ul>li {
+  list-style-type: none;
+  text-align: left;
+
+  &::before {
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 700;
+    content: '\f00c';
+    margin-right: 10px;
+  }
+}
+
+
+
+//  h3 {
+//   border-bottom: 1px red solid;
+// }
+
+h3:after {
+  content: "";
+  display: block;
+  margin: 5px auto;
+  width: 75%;
+  border-bottom: 1px solid red;  
+}
+
+h3.study-heading:after {
+  width: 50%;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+
+
+
+.test {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 150px auto;
+  height: 100vh;
+  width: 70%;
+  position: relative;
+  justify-items: center;
+
+}
+
+// .item {
+//   border: 1px black solid;
+// }
+
+.one {
+  background-color: #f4f4f4;
+  height: 80%;
+  width: 60%;
+  position: absolute;
+}
+
+
+// Animations
+@keyframes spinFromRight {
+  0% {
+    transform: rotate(90deg) translateY(-1000px);
+  }
+}
+@keyframes spinFromLeft {
+  0% {
+    transform: rotate(90deg) translate(-1000px, 1000px);
+  }
+}
+@keyframes navBarFade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideLocation {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+.textLocation {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 10px 20px;
+  animation: 2500ms ease-in hideLocation;
+}
+
+
+.one {
+  animation: 2000ms ease-in spinFromLeft;
+}
+
+.two {
+  background-color: #c1c1c1;
+  height: 45%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  animation: 2000ms ease-in spinFromRight;
+  transform: skewX(10deg);
+}
+
+.navbar {
+  animation: 2000ms ease-in navBarFade;
+}
+
+
