@@ -1,5 +1,5 @@
-const link = document.querySelectorAll ('.nav-link');
-const navBar = document.querySelector ('.collapse');
+const link = document.querySelectorAll('.nav-link');
+const navBar = document.querySelector('.collapse');
 const calender = document.querySelector('.calender');
 
 
@@ -13,9 +13,9 @@ document.querySelector('.header-close').textContent = '</h1>';
 
 
 // Close Nav Menu after clicking a link
-$(link).on('click', function(event) {
+$(link).on('click', function (event) {
   if (navBar.classList.contains('show'))
-  navBar.classList.remove('show')
+    navBar.classList.remove('show')
 });
 // Close Nav Menu if clicking outside of Menu
 $(document).on('click', function () {
@@ -46,4 +46,6 @@ $(document).ready(function () {
   });
 });
 
-new GitHubCalendar(calender, "AnthonyJRay", { responsive: true });
+new GitHubCalendar(calender, "AnthonyJRay", {
+  responsive: true
+});

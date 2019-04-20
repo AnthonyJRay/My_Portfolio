@@ -40,6 +40,7 @@
 
 span {
   color: rgba(147, 44, 73, 0.637);
+
   &.slash {
     font-size: 1.2em;
     font-weight: 700;
@@ -59,15 +60,16 @@ a.nav-link:hover {
 }
 
 .nav-link.active {
-display: inline-block;
-&::after {
-  content: '';
-  display: block;
-  width: 100%;
-  border: 1px solid rgba(147, 44, 73, 0.801);
-  height: 2px;
+  display: inline-block;
 
-}
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(147, 44, 73, 0.801);
+    height: 2px;
+
+  }
 }
 
 .header-wrapper {
@@ -113,4 +115,9 @@ display: inline-block;
 .tooling-header {
   display: inline-block;
   border-bottom: 1px solid rgba(147, 44, 73, 0.404);
+  margin-top: 10px;
+}
+
+.projects {
+  max-width: 100%;
 }
