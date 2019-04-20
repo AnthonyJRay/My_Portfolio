@@ -118,6 +118,51 @@ a.nav-link:hover {
   margin-top: 10px;
 }
 
-.projects {
-  max-width: 100%;
+.projects > img {
+  display: block;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+// .overlay-one {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+// }
+
+.project-one,
+.project-two,
+.project-three {
+  position: relative;
+}
+
+.overlay-one,
+.overlay-two,
+.overlay-three {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(252, 252, 252, 0.801);
+}
+
+.live-link {
+  color: white;
+}
+
+.btn {
+  opacity: .9;
+  &:hover {
+    background-color: rgb(147, 44, 73);
+  }
 }

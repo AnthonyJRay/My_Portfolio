@@ -7,3 +7,10 @@
 body {
   background-color: rgba(248, 248, 248, 0.938);
 }
+
+a {
+  text-decoration: none!important;
+  &:hover {
+    color:white;
+  };
+}

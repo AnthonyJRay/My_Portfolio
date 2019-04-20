@@ -1,6 +1,8 @@
 const link = document.querySelectorAll('.nav-link');
 const navBar = document.querySelector('.collapse');
 const calender = document.querySelector('.calender');
+const projectImage = document.querySelector('.project-img');
+const projectOverlay = document.querySelectorAll('.overlay');
 
 
 document.querySelector('.para-open').textContent = '<p>';
@@ -49,3 +51,14 @@ $(document).ready(function () {
 new GitHubCalendar(calender, "AnthonyJRay", {
   responsive: true
 });
+
+$(projectOverlay).hover(function () {
+  $(this).animate({
+    'opacity':'0.7'},
+    500);
+  },
+  function () {
+    $(this).animate({
+      'opacity':'0'},
+      500);
+  });
