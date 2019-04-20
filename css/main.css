@@ -230,6 +230,13 @@ a.nav-link:hover {
   background-color: #932c49;
 }
 
+.header-wrapper,
+.about-me,
+.my-skills,
+.my-projects {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
