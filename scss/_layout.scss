@@ -92,8 +92,25 @@ a.nav-link:hover {
   animation: navFadeDown 1s ease-in;
 }
 
+.header-text {
+  margin-bottom: 3em;
+}
+
+.social-icons {
+
+  &>a.social-links>i.fab {
+  margin: 5px;
+  color: rgba(44, 44, 44, 0.801);
+  &:hover {
+    text-shadow: 1px 1px 10px rgba(147, 44, 73, 0.404);
+    transform: scale(1.1);
+  }
+  }
+}
+
 .intro-text {
   margin-top: 50px;
+  margin-bottom: 90px;
   letter-spacing: 1.2px;
 }
 
