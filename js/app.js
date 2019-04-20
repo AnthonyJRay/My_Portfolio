@@ -11,6 +11,9 @@ document.querySelector('.para-close').textContent = '</p>';
 document.querySelector('.header-open').textContent = '<h1>';
 document.querySelector('.header-close').textContent = '</h1>';
 
+document.querySelector('.open-span').textContent = '<span>';
+document.querySelector('.close-span').textContent = '</span>';
+
 
 
 

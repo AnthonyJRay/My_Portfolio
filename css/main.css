@@ -254,6 +254,26 @@ a.nav-link:hover {
   height: 100vh !important;
 }
 
+.email:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.email > a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-family: 'Belleza';
+}
+
+.email > a:hover {
+  text-shadow: 1px 1px 5px #f4f4f4;
+}
+
+.email-brackets {
+  font-size: 2em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -318,5 +338,13 @@ h4 {
   font-size: 16px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.295);
+}
+
+.open-span,
+.close-span {
+  font-family: 'Italianno', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(207, 207, 207, 0.623);
 }
 /*# sourceMappingURL=main.css.map */

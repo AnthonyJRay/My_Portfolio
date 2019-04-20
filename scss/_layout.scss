@@ -185,3 +185,22 @@ a.nav-link:hover {
 .my-projects {
   height: 100vh!important;
 }
+
+.email {
+  &:hover {
+    transform: scale(1.1);
+    border-bottom: 1px solid #f4f4f4;
+  }
+  & > a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-family: 'Belleza';
+    &:hover {
+      text-shadow: 1px 1px 5px #f4f4f4;
+    }
+  }
+}
+
+.email-brackets {
+  font-size: 2em;
+}
