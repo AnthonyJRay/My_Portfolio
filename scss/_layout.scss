@@ -75,7 +75,6 @@ a.nav-link:hover {
 
 .header-wrapper {
   text-align: center;
-  color: rgba(44, 44, 44, 0.801);
   animation: menuFadeIn 2s;
 }
 
@@ -95,6 +94,9 @@ a.nav-link:hover {
 
 .header-text {
   margin-bottom: 3em;
+  &.project-text {
+    margin: 25px;
+  }
 }
 
 .social-icons {
@@ -111,7 +113,7 @@ a.nav-link:hover {
 
 .intro-text {
   margin-top: 50px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   letter-spacing: 1.2px;
 }
 
@@ -204,4 +206,8 @@ a.nav-link:hover {
 
 .email-brackets {
   font-size: 2em;
+}
+
+h3 {
+  color: rgba(44, 44, 44, .801);
 }

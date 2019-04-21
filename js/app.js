@@ -4,6 +4,9 @@ const calender = document.querySelector('.calender');
 const projectImage = document.querySelector('.project-img');
 const projectOverlay = document.querySelectorAll('.overlay');
 
+// Add HTML markup as Text
+document.querySelector('.open-span').textContent = '<span>';
+document.querySelector('.close-span').textContent = '</span>';
 
 document.querySelector('.para-open').textContent = '<p>';
 document.querySelector('.para-close').textContent = '</p>';
@@ -11,8 +14,6 @@ document.querySelector('.para-close').textContent = '</p>';
 document.querySelector('.header-open').textContent = '<h1>';
 document.querySelector('.header-close').textContent = '</h1>';
 
-document.querySelector('.open-span').textContent = '<span>';
-document.querySelector('.close-span').textContent = '</span>';
 
 
 
@@ -30,38 +31,15 @@ $(document).on('click', function () {
 $(document).ready(function () {
   // Add smooth scrolling to all links
   $("a").on('click', function (event) {
-
-
     if (this.hash !== "") {
-
       event.preventDefault();
-
-
       var hash = this.hash;
-
-
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function () {
-
-
+      }, 600, function () {
         window.location.hash = hash;
       });
     }
   });
 });
-
-new GitHubCalendar(calender, "AnthonyJRay", {
-  responsive: true
-});
-
-$(projectOverlay).hover(function () {
-  $(this).animate({
-    'opacity':'0.7'},
-    500);
-  },
-  function () {
-    $(this).animate({
-      'opacity':'0'},
-      500);
-  });
+  

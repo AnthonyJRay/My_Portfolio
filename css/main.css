@@ -131,7 +131,6 @@ a.nav-link:hover {
 
 .header-wrapper {
   text-align: center;
-  color: rgba(44, 44, 44, 0.801);
   -webkit-animation: menuFadeIn 2s;
           animation: menuFadeIn 2s;
 }
@@ -156,6 +155,10 @@ a.nav-link:hover {
   margin-bottom: 3em;
 }
 
+.header-text.project-text {
+  margin: 25px;
+}
+
 .social-icons > a.social-links > i.fab {
   margin: 5px;
   color: rgba(44, 44, 44, 0.801);
@@ -169,7 +172,7 @@ a.nav-link:hover {
 
 .intro-text {
   margin-top: 50px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   letter-spacing: 1.2px;
 }
 
@@ -275,6 +278,10 @@ a.nav-link:hover {
   font-size: 2em;
 }
 
+h3 {
+  color: rgba(44, 44, 44, 0.801);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -292,6 +299,10 @@ a {
 
 a:hover {
   color: white;
+}
+
+h1 {
+  color: rgba(44, 44, 44, 0.801);
 }
 
 h1 {
@@ -323,6 +334,7 @@ h3 {
 
 h4 {
   font-family: 'Belleza';
+  font-weight: 600;
 }
 
 .skill-item {
