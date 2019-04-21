@@ -2,7 +2,6 @@ const link = document.querySelectorAll('.nav-link');
 const navBar = document.querySelector('.collapse');
 const calender = document.querySelector('.calender');
 const projectImage = document.querySelector('.project-img');
-const projectOverlay = document.querySelectorAll('.overlay');
 
 // Add HTML markup as Text
 document.querySelector('.open-span').textContent = '<span>';

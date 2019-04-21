@@ -1,12 +1,18 @@
 h1 {
   font-family: 'Philosopher, sans-serif';
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 1.7em;
   letter-spacing: 1px;
 }
 
-.letter {
+p {
+  font-family: 'Source Sans Pro';
+}
+
+.letter,
+.skill-letter {
   font-weight: 900;
+  font-size: 1.2em;
 }
 
 .header-text {
@@ -25,7 +31,8 @@ h3 {
   font-size: 1.3em;
 }
 
-h4 {
+h4,
+h5 {
   font-family: 'Belleza';
   font-weight: 600;
 }
@@ -43,7 +50,6 @@ h4 {
   font-family: 'Italianno', cursive;
   font-size: 16px;
   font-weight: 400;
-
   color: rgba(0, 0, 0, 0.295);
 }
 
@@ -53,4 +59,10 @@ h4 {
   font-size: 2em;
   font-weight: 400;
   color: rgba(207, 207, 207, 0.623)
+}
+
+.skills-hr,
+.portfolio-hr {
+  width: 75%;
+  margin: 40px auto;
 }

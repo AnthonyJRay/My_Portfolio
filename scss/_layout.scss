@@ -33,7 +33,7 @@
 
 .main-content {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 0;
   right: 0;
   margin: auto;
@@ -73,7 +73,10 @@ a.nav-link:hover {
   }
 }
 
-.header-wrapper {
+.header-wrapper,
+.about-me,
+.my-skills,
+.my-projects {
   text-align: center;
   animation: menuFadeIn 2s;
 }
@@ -89,14 +92,15 @@ a.nav-link:hover {
 }
 
 .logo {
-  animation: navFadeDown 1s ease-in;
+  animation: navFadeDown 1.75s ease-in;
 }
 
 .header-text {
   margin-bottom: 3em;
-  &.project-text {
-    margin: 25px;
-  }
+}
+
+.project-text {
+  margin: 25px;
 }
 
 .social-icons {
@@ -113,7 +117,7 @@ a.nav-link:hover {
 
 .intro-text {
   margin-top: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   letter-spacing: 1.2px;
 }
 
@@ -168,25 +172,32 @@ a.nav-link:hover {
   width: 90%;
   height: 100%;
   margin: auto;
-  background-color: rgba(252, 252, 252, 0.801);
+  background-color: rgb(255, 254, 254);
+  color: #292929d3;
+  letter-spacing: 1px;
+}
+
+.skill-letter {
+  color: rgb(147, 44, 73);
 }
 
 .live-link {
-  color: white;
+  color: #f4f4f4;
 }
 
 .btn {
   opacity: .9;
   &:hover {
-    background-color: rgb(147, 44, 73);
+    background-color: rgb(131, 55, 76);
   }
 }
 
-.header-wrapper,
 .about-me,
-.my-skills,
 .my-projects {
   height: 100vh!important;
+}
+.my-skills {
+  margin-bottom: 50px;
 }
 
 .email {
@@ -210,4 +221,42 @@ a.nav-link:hover {
 
 h3 {
   color: rgba(44, 44, 44, .801);
+}
+
+.fa-github,
+.fa-eye {
+  margin-right: .25em;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px auto;
+  justify-content: space-around;
+  & > ul {
+    list-style-type: none;
+  }
+}
+
+.project-text {
+  max-width: 75%;
+  margin: 40px auto;
+  & > .header-text {
+    font-size: .8em;
+  }
+}
+
+.overlay-header {
+  border-bottom: 1px #292929d3 solid;
+}
+
+.goals-text {
+  margin-bottom: 3em;
+}
+
+.frontend-wrapper,
+.frameworks-wrapper,
+.tooling-wrapper {
+  color: rgba(44, 44, 44, 0.801);
 }

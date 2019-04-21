@@ -21,12 +21,28 @@
 @-webkit-keyframes menuFadeIn {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+  }
+  50% {
+    opacity: .1;
+  }
+  75% {
+    opacity: .5;
   }
 }
 
 @keyframes menuFadeIn {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+  }
+  50% {
+    opacity: .1;
+  }
+  75% {
+    opacity: .5;
   }
 }
 
@@ -91,7 +107,7 @@
 
 .main-content {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 0;
   right: 0;
   margin: auto;
@@ -129,7 +145,10 @@ a.nav-link:hover {
   height: 2px;
 }
 
-.header-wrapper {
+.header-wrapper,
+.about-me,
+.my-skills,
+.my-projects {
   text-align: center;
   -webkit-animation: menuFadeIn 2s;
           animation: menuFadeIn 2s;
@@ -147,15 +166,15 @@ a.nav-link:hover {
 }
 
 .logo {
-  -webkit-animation: navFadeDown 1s ease-in;
-          animation: navFadeDown 1s ease-in;
+  -webkit-animation: navFadeDown 1.75s ease-in;
+          animation: navFadeDown 1.75s ease-in;
 }
 
 .header-text {
   margin-bottom: 3em;
 }
 
-.header-text.project-text {
+.project-text {
   margin: 25px;
 }
 
@@ -172,7 +191,7 @@ a.nav-link:hover {
 
 .intro-text {
   margin-top: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   letter-spacing: 1.2px;
 }
 
@@ -236,11 +255,17 @@ a.nav-link:hover {
   width: 90%;
   height: 100%;
   margin: auto;
-  background-color: rgba(252, 252, 252, 0.801);
+  background-color: #fffefe;
+  color: #292929d3;
+  letter-spacing: 1px;
+}
+
+.skill-letter {
+  color: #932c49;
 }
 
 .live-link {
-  color: white;
+  color: #f4f4f4;
 }
 
 .btn {
@@ -248,14 +273,16 @@ a.nav-link:hover {
 }
 
 .btn:hover {
-  background-color: #932c49;
+  background-color: #83374c;
 }
 
-.header-wrapper,
 .about-me,
-.my-skills,
 .my-projects {
   height: 100vh !important;
+}
+
+.my-skills {
+  margin-bottom: 50px;
 }
 
 .email:hover {
@@ -279,6 +306,52 @@ a.nav-link:hover {
 }
 
 h3 {
+  color: rgba(44, 44, 44, 0.801);
+}
+
+.fa-github,
+.fa-eye {
+  margin-right: .25em;
+}
+
+.skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin: 10px auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skills-list > ul {
+  list-style-type: none;
+}
+
+.project-text {
+  max-width: 75%;
+  margin: 40px auto;
+}
+
+.project-text > .header-text {
+  font-size: .8em;
+}
+
+.overlay-header {
+  border-bottom: 1px #292929d3 solid;
+}
+
+.goals-text {
+  margin-bottom: 3em;
+}
+
+.frontend-wrapper,
+.frameworks-wrapper,
+.tooling-wrapper {
   color: rgba(44, 44, 44, 0.801);
 }
 
@@ -308,12 +381,18 @@ h1 {
 h1 {
   font-family: 'Philosopher, sans-serif';
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 1.7em;
   letter-spacing: 1px;
 }
 
-.letter {
+p {
+  font-family: 'Source Sans Pro';
+}
+
+.letter,
+.skill-letter {
   font-weight: 900;
+  font-size: 1.2em;
 }
 
 .header-text {
@@ -332,7 +411,8 @@ h3 {
   font-size: 1.3em;
 }
 
-h4 {
+h4,
+h5 {
   font-family: 'Belleza';
   font-weight: 600;
 }
@@ -359,5 +439,11 @@ h4 {
   font-size: 2em;
   font-weight: 400;
   color: rgba(207, 207, 207, 0.623);
+}
+
+.skills-hr,
+.portfolio-hr {
+  width: 75%;
+  margin: 40px auto;
 }
 /*# sourceMappingURL=main.css.map */

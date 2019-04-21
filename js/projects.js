@@ -1,3 +1,5 @@
+const projectOverlay = document.querySelectorAll('.overlay');
+
 // Show project overlays on hover
 $(projectOverlay).hover(function () {
   $(this).animate({

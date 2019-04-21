@@ -11,6 +11,13 @@
 @keyframes menuFadeIn {
   0% {
     opacity: 0;
+    transform: translateY(500px);
+  }
+  50% {
+    opacity: .1;
+  }
+  75% {
+    opacity: .5;
   }
 }
 
