@@ -73,6 +73,7 @@
   width: 100%;
   z-index: 1;
   opacity: .98;
+  padding: 8px 0;
 }
 
 .navbar-header {
@@ -343,7 +344,7 @@ h4 {
 .open-span,
 .close-span {
   font-family: 'Italianno', cursive;
-  font-size: 20px;
+  font-size: 2em;
   font-weight: 400;
   color: rgba(207, 207, 207, 0.623);
 }
