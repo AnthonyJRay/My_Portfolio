@@ -29,6 +29,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  &-toggler {
+    @include med {
+      display: none;
+    }
+  }
 }
 
 .main-content {
@@ -129,6 +135,10 @@ a.nav-link:hover {
 
 .logo {
   animation: navFadeDown 1.75s ease-in;
+  border-radius: 50%;
+  &:hover {
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+  }
 }
 
 .header-text {
@@ -300,4 +310,21 @@ h3 {
 
 .contact-me {
   max-width: 90%;
+  @include med {
+    max-width: 70%;
+  }
+}
+
+.navbar-link {
+  display: none;
+  @include med {
+    padding: 10px 20px;
+    display: inline-block;
+    color: rgb(131, 55, 76);
+  }
+  &:hover {
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+    border-radius: 100%;
+  }
 }

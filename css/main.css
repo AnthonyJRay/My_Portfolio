@@ -105,6 +105,12 @@
           align-items: center;
 }
 
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
 .main-content {
   position: absolute;
   top: 100px;
@@ -212,6 +218,12 @@ a.nav-link:hover {
 .logo {
   -webkit-animation: navFadeDown 1.75s ease-in;
           animation: navFadeDown 1.75s ease-in;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  -webkit-box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+          box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
 }
 
 .header-text {
@@ -402,6 +414,31 @@ h3 {
 
 .contact-me {
   max-width: 90%;
+}
+
+@media (min-width: 992px) {
+  .contact-me {
+    max-width: 70%;
+  }
+}
+
+.navbar-link {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-link {
+    padding: 10px 20px;
+    display: inline-block;
+    color: #83374c;
+  }
+}
+
+.navbar-link:hover {
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+  -webkit-box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+          box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+  border-radius: 100%;
 }
 
 * {
