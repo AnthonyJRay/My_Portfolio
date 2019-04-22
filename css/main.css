@@ -154,6 +154,50 @@ a.nav-link:hover {
           animation: menuFadeIn 2s;
 }
 
+@media (min-width: 992px) {
+  .header-wrapper {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.about-me {
+  max-width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .skills-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .projects-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  #projects-hr {
+    display: none;
+  }
+}
+
 .float-left,
 .contrib-footer,
 .contrib-column {
@@ -197,7 +241,8 @@ a.nav-link:hover {
 
 .about-me,
 .my-skills,
-.my-projects {
+.my-projects,
+.contact-me {
   padding-top: 100px;
 }
 
@@ -353,6 +398,10 @@ h3 {
 .frameworks-wrapper,
 .tooling-wrapper {
   color: rgba(44, 44, 44, 0.801);
+}
+
+.contact-me {
+  max-width: 90%;
 }
 
 * {

@@ -81,6 +81,42 @@ a.nav-link:hover {
   animation: menuFadeIn 2s;
 }
 
+.header-wrapper {
+  @include med {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.about-me {
+  max-width: 90%;
+  margin: auto;
+}
+
+.skills-content {
+  @include med {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.projects-wrapper {
+  @include sm {
+    max-width: 90%;
+    margin: auto;
+  }
+  @include med {
+    display: flex;
+
+  }
+}
+
+#projects-hr {
+  @include med {
+    display: none;
+  }
+}
+
 .float-left,
 .contrib-footer,
 .contrib-column {
@@ -123,7 +159,8 @@ a.nav-link:hover {
 
 .about-me,
 .my-skills,
-.my-projects {
+.my-projects,
+.contact-me {
   padding-top: 100px;
 }
 
@@ -259,4 +296,8 @@ h3 {
 .frameworks-wrapper,
 .tooling-wrapper {
   color: rgba(44, 44, 44, 0.801);
+}
+
+.contact-me {
+  max-width: 90%;
 }
