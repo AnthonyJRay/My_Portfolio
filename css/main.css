@@ -80,8 +80,6 @@
 .fas {
   font-size: 1.7em;
   margin-right: 15px;
-  -webkit-animation: menuFadeIn 2000ms ease-in;
-          animation: menuFadeIn 2000ms ease-in;
 }
 
 .navbar {
@@ -151,9 +149,9 @@ a.nav-link:hover {
 }
 
 .header-wrapper,
-.about-me,
 .my-skills,
-.my-projects {
+.my-projects,
+.contact-me {
   text-align: center;
   -webkit-animation: menuFadeIn 2s;
           animation: menuFadeIn 2s;
@@ -218,17 +216,6 @@ a.nav-link:hover {
 #navigation {
   -webkit-animation: navFadeDown 1s ease-in;
           animation: navFadeDown 1s ease-in;
-}
-
-.logo {
-  -webkit-animation: navFadeDown 1.75s ease-in;
-          animation: navFadeDown 1.75s ease-in;
-  border-radius: 50%;
-}
-
-.logo:hover {
-  -webkit-box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
-          box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
 }
 
 .header-text {
@@ -447,15 +434,12 @@ h3 {
   .navbar-link {
     padding: 10px 30px;
     display: inline-block;
-    color: #83374c;
+    color: #f4f4f4;
   }
 }
 
 .navbar-link:hover {
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
-  -webkit-box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
-          box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
-  border-radius: 100%;
 }
 
 .contact-icons {
@@ -510,6 +494,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: navFadeDown 1000ms ease-in;
+          animation: navFadeDown 1000ms ease-in;
 }
 
 .contact-email {

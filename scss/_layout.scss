@@ -13,7 +13,6 @@
 .fas {
   font-size: 1.7em;
   margin-right: 15px;
-  animation: menuFadeIn 2000ms ease-in;
 }
 
 .navbar {
@@ -79,9 +78,9 @@ a.nav-link:hover {
 }
 
 .header-wrapper,
-.about-me,
 .my-skills,
-.my-projects {
+.my-projects,
+.contact-me {
   text-align: center;
   animation: menuFadeIn 2s;
 }
@@ -137,14 +136,6 @@ a.nav-link:hover {
   animation: navFadeDown 1s ease-in;
 }
 
-.logo {
-  animation: navFadeDown 1.75s ease-in;
-  border-radius: 50%;
-  &:hover {
-    box-shadow: $shadow-light;
-  }
-}
-
 .header-text {
   margin-bottom: 3em;
 }
@@ -168,7 +159,7 @@ a.nav-link:hover {
 .social-links {
   color: $text-light;
   margin: 10px;
-  &>i.fab:hover {
+  & > i.fab:hover {
     text-shadow: 1px 1px 10px $text-light;
     transform: scale(1.1);
   }
@@ -335,12 +326,10 @@ h3 {
   @include med {
     padding: 10px 30px;
     display: inline-block;
-    color: rgb(131, 55, 76);
+    color: $text-light;
   }
   &:hover {
     text-shadow: $shadow-light;
-    box-shadow: $shadow-light;
-    border-radius: 100%;
   }
 }
 
@@ -384,6 +373,7 @@ footer {
 footer {
   display: flex;
   align-items: center;
+  animation: navFadeDown 1000ms ease-in;
 }
 
 .contact-email {
