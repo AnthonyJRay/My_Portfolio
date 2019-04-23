@@ -1,44 +1,44 @@
 h1 {
-  font-family: 'Philosopher, sans-serif';
-  font-weight: 700;
+  font-family: $philosopher;
   font-size: 1.7em;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
 p {
-  font-family: 'Source Sans Pro';
+  font-family: $source;
 }
 
 .letter,
 .skill-letter {
-  font-weight: 900;
   font-size: 1.2em;
+  font-weight: 900;
 }
 
 .header-text {
+  font-size: 0.6em;
   font-style: italic;
   letter-spacing: 2px;
-  font-size: 0.6em;
 }
 
 .intro-text {
-  font-family: 'Source Sans Pro';
+  font-family: $source;
 }
 
 .hello,
 h3 {
-  font-weight: 900;
   font-size: 1.3em;
+  font-weight: 900;
 }
 
 h4,
 h5 {
-  font-family: 'Belleza';
+  font-family: $philosopher;
   font-weight: 600;
 }
 
 .skill-item {
-  font-family: 'Source Sans Pro';
+  font-family: $source;
   font-weight: 600;
   letter-spacing: .065em;
 }
@@ -47,22 +47,22 @@ h5 {
 .header-close,
 .para-open,
 .para-close {
-  font-family: 'Italianno', cursive;
+  color: $markup-dark;
+  font-family: $italiano;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.295);
 }
 
 .open-span,
 .close-span {
-  font-family: 'Italianno', cursive;
+  color: $markup-light;
+  font-family: $italiano;
   font-size: 2em;
   font-weight: 400;
-  color: rgba(207, 207, 207, 0.623)
 }
 
 .skills-hr,
 .portfolio-hr {
-  width: 75%;
   margin: 40px auto;
+  width: 75%;
 }
