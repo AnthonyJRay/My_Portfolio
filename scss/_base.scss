@@ -5,16 +5,16 @@
 }
 
 body {
-  background-color: rgba(248, 248, 248, 0.938);
+  background-color: $text-light;
 }
 
 a {
   text-decoration: none!important;
   &:hover {
-    color:white;
+    color: $text-light;
   };
 }
 
 h1 {
-  color: rgba(44, 44, 44, 0.801);
+  color: $text-dark;
 }

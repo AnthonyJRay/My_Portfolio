@@ -17,7 +17,6 @@
 }
 
 .navbar {
-  background-color: lightgrey;
   width: 100%;
   z-index: 1;
   opacity: .98;
@@ -46,7 +45,7 @@
 }
 
 span {
-  color: rgba(147, 44, 73, 0.637);
+  color: $span-color;
 
   &.slash {
     font-size: 1.2em;
@@ -56,14 +55,14 @@ span {
 
 
 .collapse {
-  border-top: 1px solid rgba(147, 44, 73, 0.404);
+  border-top: 1px solid $span-color;
   width: 100%;
   margin-top: 20px;
   padding-top: 10px;
 }
 
 a.nav-link:hover {
-  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+  text-shadow: $shadow-light;
 }
 
 .nav-link.active {
@@ -73,7 +72,7 @@ a.nav-link:hover {
     content: '';
     display: block;
     width: 100%;
-    border: 1px solid rgba(147, 44, 73, 0.801);
+    border: 1px solid $span-color;
     height: 2px;
 
   }
@@ -142,7 +141,7 @@ a.nav-link:hover {
   animation: navFadeDown 1.75s ease-in;
   border-radius: 50%;
   &:hover {
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+    box-shadow: $shadow-light;
   }
 }
 
@@ -158,11 +157,20 @@ a.nav-link:hover {
 
   &>a.social-links>i.fab {
   margin: 5px;
-  color: rgba(44, 44, 44, 0.801);
+  color: $text-dark;
   &:hover {
-    text-shadow: 1px 1px 10px rgba(147, 44, 73, 0.404);
+    text-shadow: 1px 1px 10px $span-color;
     transform: scale(1.1);
   }
+  }
+}
+
+.social-links {
+  color: $text-light;
+  margin: 10px;
+  &>i.fab:hover {
+    text-shadow: 1px 1px 10px $text-light;
+    transform: scale(1.1);
   }
 }
 
@@ -191,7 +199,7 @@ a.nav-link:hover {
 .frameworks-header,
 .tooling-header {
   display: inline-block;
-  border-bottom: 1px solid rgba(147, 44, 73, 0.404);
+  border-bottom: 1px solid $span-color;
   margin-top: 10px;
 }
 
@@ -226,7 +234,7 @@ a.nav-link:hover {
   width: 90%;
   padding: 10px 0;
   margin: auto;
-  background-color: rgb(255, 254, 254);
+  background-color: $text-light;
   color: #292929d3;
   letter-spacing: 1px;
 }
@@ -236,17 +244,17 @@ a.nav-link:hover {
 }
 
 .skill-letter {
-  color: rgb(147, 44, 73);
+  color: $span-color;
 }
 
 .live-link {
-  color: #f4f4f4;
+  color: $text-light;
 }
 
 .btn {
   opacity: .9;
   &:hover {
-    background-color: rgb(131, 55, 76);
+    background-color: $span-color;
   }
 }
 
@@ -257,14 +265,14 @@ a.nav-link:hover {
 .email {
   &:hover {
     transform: scale(1.1);
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid $text-light;
   }
   & > a {
     text-decoration: none;
-    color: #f4f4f4;
+    color: $text-light;
     font-family: 'Belleza';
     &:hover {
-      text-shadow: 1px 1px 5px #f4f4f4;
+      text-shadow: $shadow-light;
     }
   }
 }
@@ -274,7 +282,7 @@ a.nav-link:hover {
 }
 
 h3 {
-  color: rgba(44, 44, 44, .801);
+  color: $text-dark;
 }
 
 .fa-github,
@@ -312,13 +320,13 @@ h3 {
 .frontend-wrapper,
 .frameworks-wrapper,
 .tooling-wrapper {
-  color: rgba(44, 44, 44, 0.801);
+  color: $text-dark;
 }
 
 .contact-me {
-  max-width: 90%;
+  max-width: 80%;
   @include med {
-    max-width: 70%;
+    max-width: 60%;
   }
 }
 
@@ -330,8 +338,8 @@ h3 {
     color: rgb(131, 55, 76);
   }
   &:hover {
-    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.884);
+    text-shadow: $shadow-light;
+    box-shadow: $shadow-light;
     border-radius: 100%;
   }
 }
@@ -343,11 +351,41 @@ h3 {
 .para-open,
 .para-close {
   margin: 0 5px;
-  color: rgba(0, 0, 0, 0.295);
+  color: $markup-dark;
 }
 
 .projects {
-  background-color: white;
+  background-color: $text-light;
   padding: 1em;
   margin: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  height: 50px;
+}
+
+.copyright-text {
+  color: $text-light;
+  margin: 0;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+.contact-email {
+  margin-bottom: 3em;
 }
