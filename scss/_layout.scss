@@ -145,8 +145,7 @@ a.nav-link:hover {
 }
 
 .social-icons {
-
-  &>a.social-links>i.fab {
+  & > a.social-links > i.fab {
   margin: 5px;
   color: $text-dark;
   &:hover {
@@ -245,7 +244,7 @@ a.nav-link:hover {
 .btn {
   opacity: .9;
   &:hover {
-    background-color: $span-color;
+    background-color: rgb(147, 44, 73);
   }
 }
 
