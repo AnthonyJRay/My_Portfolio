@@ -58,6 +58,92 @@
   }
 }
 
+h1 {
+  font-family: "Philosopher, sans-serif";
+  font-size: 1.7em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "Source Sans Pro";
+}
+
+.letter,
+.skill-letter {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.header-text {
+  font-size: 0.6em;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.intro-text {
+  font-family: "Source Sans Pro";
+}
+
+.hello,
+h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+h4,
+h5 {
+  font-family: "Philosopher, sans-serif";
+  font-weight: 600;
+}
+
+.skill-item {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  letter-spacing: .065em;
+}
+
+.header-open,
+.header-close,
+.para-open,
+.para-close {
+  color: rgba(0, 0, 0, 0.295);
+  font-family: "Italianno", cursive;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.open-span,
+.close-span {
+  color: rgba(207, 207, 207, 0.623);
+  font-family: "Italianno", cursive;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #f4f4f4;
+}
+
+h1 {
+  color: rgba(44, 44, 44, 0.801);
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -201,10 +287,10 @@ a.nav-link:hover {
   }
 }
 
-@media (min-width: 992px) {
-  #projects-hr {
-    display: none;
-  }
+.portfolio-hr,
+.skills-hr {
+  margin: 40px auto;
+  width: 75%;
 }
 
 .float-left,
@@ -502,95 +588,10 @@ footer {
   margin-bottom: 3em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-color: #f4f4f4;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-a:hover {
-  color: #f4f4f4;
-}
-
-h1 {
-  color: rgba(44, 44, 44, 0.801);
-}
-
-h1 {
-  font-family: "Philosopher, sans-serif";
-  font-size: 1.7em;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-p {
-  font-family: "Source Sans Pro";
-}
-
-.letter,
-.skill-letter {
-  font-size: 1.2em;
-  font-weight: 900;
-}
-
-.header-text {
-  font-size: 0.6em;
-  font-style: italic;
-  letter-spacing: 2px;
-}
-
-.intro-text {
-  font-family: "Source Sans Pro";
-}
-
-.hello,
-h3 {
-  font-size: 1.3em;
-  font-weight: 900;
-}
-
-h4,
-h5 {
-  font-family: "Philosopher, sans-serif";
-  font-weight: 600;
-}
-
-.skill-item {
-  font-family: "Source Sans Pro";
-  font-weight: 600;
-  letter-spacing: .065em;
-}
-
-.header-open,
-.header-close,
-.para-open,
-.para-close {
-  color: rgba(0, 0, 0, 0.295);
-  font-family: "Italianno", cursive;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.open-span,
-.close-span {
-  color: rgba(207, 207, 207, 0.623);
-  font-family: "Italianno", cursive;
-  font-size: 2em;
-  font-weight: 400;
-}
-
-.skills-hr,
-.portfolio-hr {
-  margin: 40px auto;
-  width: 75%;
+@media (min-width: 992px) {
+  #divider-one,
+  #divider-two {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

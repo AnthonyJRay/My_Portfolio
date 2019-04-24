@@ -119,11 +119,10 @@ a.nav-link:hover {
     max-width: 33%;
   }
 }
-
-#projects-hr {
-  @include med {
-    display: none;
-  }
+.portfolio-hr,
+.skills-hr {
+  margin: 40px auto;
+  width: 75%;
 }
 
 .float-left,
@@ -377,4 +376,11 @@ footer {
 
 .contact-email {
   margin-bottom: 3em;
+}
+
+#divider-one,
+#divider-two {
+  @include med {
+    display: none;
+  }
 }
