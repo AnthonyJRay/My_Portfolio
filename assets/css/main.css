@@ -559,20 +559,6 @@ footer {
   margin: 0;
 }
 
-.copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90%;
-  margin: auto;
-}
-
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,6 +568,27 @@ footer {
           align-items: center;
   -webkit-animation: navFadeDown 1000ms ease-in;
           animation: navFadeDown 1000ms ease-in;
+}
+
+footer > .copyright {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  font-size: .6em;
+}
+
+@media (min-width: 768px) {
+  footer > .copyright {
+    font-size: 1em;
+  }
 }
 
 .contact-email {

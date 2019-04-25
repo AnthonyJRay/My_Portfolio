@@ -360,18 +360,23 @@ footer {
   margin: 0;
 }
 
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-}
+
 
 footer {
   display: flex;
   align-items: center;
   animation: navFadeDown 1000ms ease-in;
+  & > .copyright {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    font-size: .6em;
+    @include sm {
+      font-size: 1em;
+    }
+  }
 }
 
 .contact-email {
