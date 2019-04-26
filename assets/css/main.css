@@ -374,13 +374,15 @@ a.nav-link:hover {
 
 .project-one,
 .project-two,
-.project-three {
+.project-three,
+.project-four {
   position: relative;
 }
 
 .overlay-one,
 .overlay-two,
-.overlay-three {
+.overlay-three,
+.overlay-four {
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,5 +602,18 @@ footer > .copyright {
   #divider-two {
     display: none;
   }
+}
+
+.home-shortcuts {
+  margin-top: 15px;
+}
+
+.home-shortcuts > a {
+  color: rgba(44, 44, 44, 0.801);
+}
+
+.home-shortcuts > a:hover {
+  text-shadow: 1px 1px 10px rgba(147, 44, 73, 0.637);
+  color: #f4f4f4;
 }
 /*# sourceMappingURL=main.css.map */

@@ -203,13 +203,15 @@ a.nav-link:hover {
 
 .project-one,
 .project-two,
-.project-three {
+.project-three,
+.project-four {
   position: relative;
 }
 
 .overlay-one,
 .overlay-two,
-.overlay-three {
+.overlay-three,
+.overlay-four {
   opacity: 0;
   display: flex;
   justify-content: center;
@@ -387,5 +389,16 @@ footer {
 #divider-two {
   @include med {
     display: none;
+  }
+}
+
+.home-shortcuts {
+  margin-top: 15px;
+  & > a {
+    color: $text-dark;
+  }
+& > a:hover {
+    text-shadow: 1px 1px 10px $span-color;
+    color: $text-light;
   }
 }
