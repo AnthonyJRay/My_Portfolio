@@ -278,12 +278,14 @@ a.nav-link:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media (min-width: 992px) {
   .projects {
-    max-width: 33%;
+    max-width: 45%;
   }
 }
 
@@ -545,7 +547,7 @@ h3 {
 .projects {
   background-color: #f4f4f4;
   padding: 1em;
-  margin: 10px;
+  margin: auto;
 }
 
 footer {

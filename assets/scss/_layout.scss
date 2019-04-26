@@ -111,12 +111,13 @@ a.nav-link:hover {
   }
   @include med {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .projects {
   @include med {
-    max-width: 33%;
+    max-width: 45%;
   }
 }
 .portfolio-hr,
@@ -346,7 +347,7 @@ h3 {
 .projects {
   background-color: $text-light;
   padding: 1em;
-  margin: 10px;
+  margin: auto;
 }
 
 footer {
