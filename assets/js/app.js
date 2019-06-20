@@ -41,4 +41,36 @@ $(document).ready(function () {
     }
   });
 });
+
+
+// Get and Display Current Time in Footer
+
+// Get current Time
+const time = new Date();
+const mins = time.getMinutes().toString();
+const hours = time.getHours().toString();
+
+timeOfDay = () => {
+  if (hours < "12") {
+    timeOfDay = 'AM'
+  } else {
+    timeOfDay = 'PM'
+  }
+  return timeOfDay;
+}
+timeOfDay();
+console.log(timeOfDay);
+
+getTime = () => {
+  getTime = hours +':'+ mins +' '+timeOfDay;
+  return getTime;
+}
+
+// Find if Morning or Afternoon
+
+
+displayTime = () => {
+  const currentTime = document.querySelector('#currentTime');
+  currentTime.innerContent = hours;
+}
   
