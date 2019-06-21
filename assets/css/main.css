@@ -121,6 +121,10 @@ h5 {
   font-weight: 400;
 }
 
+#currentTime {
+  color: rgba(207, 207, 207, 0.623);
+}
+
 * {
   margin: 0;
   padding: 0;

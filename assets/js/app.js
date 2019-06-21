@@ -46,10 +46,11 @@ $(document).ready(function () {
 // Get and Display Current Time in Footer
 
 // Get current Time
-const time = new Date();
-const mins = time.getMinutes().toString();
-const hours = time.getHours().toString();
+let time = new Date();
+let mins = time.getMinutes().toString();
+let hours = time.getHours().toString();
 
+// Find AM or PM
 timeOfDay = () => {
   if (hours < "12") {
     timeOfDay = 'AM'
@@ -59,18 +60,26 @@ timeOfDay = () => {
   return timeOfDay;
 }
 timeOfDay();
-console.log(timeOfDay);
 
+// Convert 24 hour clock to 12 hour
+hours = (hours > 12) ? hours -12:hours;
+// Add a 0 for minutes less than 10
+mins = (mins < 10) ? "0" + mins:mins;
+
+// Add timeOfDay to current time
 getTime = () => {
   getTime = hours +':'+ mins +' '+timeOfDay;
   return getTime;
 }
+getTime();
 
-// Find if Morning or Afternoon
 
 
+// Add getTime to the innerText of the currentTime span element
 displayTime = () => {
   const currentTime = document.querySelector('#currentTime');
-  currentTime.innerContent = hours;
+  currentTime.innerText = getTime;
 }
+displayTime();
+// setInterval(displayClock, 1000);
   
